@@ -45,6 +45,7 @@ function Home() {
   return (
     <div className="px-4 sm:px-8 py-6">
 
+      {/* Search Section */}
       <form
         onSubmit={handleSearch}
         className="max-w-xl mx-auto flex flex-col sm:flex-row gap-2 mb-8"
@@ -66,13 +67,19 @@ function Home() {
         </button>
       </form>
 
+      {/* Error */}
       {error && (
         <div className="text-center text-red-400 mb-6">{error}</div>
       )}
 
+      {/* Movies / Loading / No results */}
       {loading ? (
         <div className="flex justify-center items-center text-gray-400 mt-20">
           Loading movies...
+        </div>
+      ) : movies.length === 0 ? (
+        <div className="text-center text-gray-400 mt-20">
+          No movies found for "{searchQuery}"
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
