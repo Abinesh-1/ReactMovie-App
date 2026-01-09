@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/ReactMovie-App/'  // MUST match your repo name exactly
+  base: '/ReactMovie-App/'  
 })

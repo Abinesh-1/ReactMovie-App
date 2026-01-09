@@ -2,7 +2,7 @@
   "name": "movieapp",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Abinesh.github.io/ReactMovie-App",
+  "homepage": "https://Abinesh-1.github.io/ReactMovie-App",
   "type": "module",
   "scripts": {
     "dev": "vite",
